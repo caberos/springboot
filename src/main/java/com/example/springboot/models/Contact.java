@@ -12,8 +12,8 @@ import lombok.Setter;
 public class Contact {
 
     @Id
-    @Getter @Setter @Column(name = "identifier")
-    private String identifier;
+    @Getter  @Column(name = "identifier")
+    private Integer identifier;
 
     @Getter @Setter @Column(name = "name")
     private String name;
@@ -29,4 +29,53 @@ public class Contact {
 
     @Getter @Setter @Column(name = "relationship")
     private String relationship;
+    public Integer getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(Integer identifier) {
+        this.identifier = identifier;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCellphone() {
+        return cellphone;
+    }
+
+    public void setCellphone(String cellphone) {
+        this.cellphone = cellphone;
+    }
+
+    public String getRelationship() {
+        return relationship;
+    }
+
+    public void setRelationship(String relationship) {
+        this.relationship = relationship;
+    }
+
+
 }

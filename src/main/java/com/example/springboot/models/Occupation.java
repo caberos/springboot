@@ -12,8 +12,8 @@ import lombok.Setter;
 public class Occupation {
 
     @Id
-    @Getter @Setter @Column(name = "identifier")
-    private int identifier;
+    @Getter  @Column(name = "identifier")
+    private Integer identifier;
 
     @Getter @Setter @Column(name = "title")
     private String title;
@@ -27,5 +27,43 @@ public class Occupation {
     @Getter @Setter @Column(name = "old")
     private double old;
 
+    public Integer getIdentifier() {
+        return identifier;
+    }
 
+    public void setIdentifier(Integer identifier) {
+        this.identifier = identifier;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+    public String getProject() {
+        return project;
+    }
+
+    public void setProject(String project) {
+        this.project = project;
+    }
+
+    public double getOld() {
+        return old;
+    }
+
+    public void setOld(double old) {
+        this.old = old;
+    }
 }
